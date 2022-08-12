@@ -33,3 +33,9 @@ ul{
         }
     }
 }
+
+@media (max-width:767px) {
+    .navbar-brand {
+        width: 40px!important;
+    }
+}

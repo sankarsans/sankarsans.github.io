@@ -25,3 +25,48 @@ body {
     top: 0px;
     @include transistion(0.5s);
 }
+
+
+@media (min-width: 992px) and (max-width:1300px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 850px;
+    }
+    .projects .img-wrapper {
+        padding-top: 80px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .projects .img-wrapper {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:890px) {
+    .mail-wrapper {
+        display: none;
+    }
+    .copyrights {
+        p{
+            padding-bottom: 20px!important;
+        }
+    }
+    .left-mail-wrapper{
+        .wrapper {
+            position: unset!important;
+            width: 100%!important;
+            ul{
+                display: inline-block!important;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 20px!important;
+                &::after{
+                    display: none!important;
+                }
+                li{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

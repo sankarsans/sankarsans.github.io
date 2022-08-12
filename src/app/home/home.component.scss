@@ -446,3 +446,60 @@ h2{
         }
     }
 }
+
+
+@media (max-width:767px) {
+    .sec-padding{
+        padding: 40px 0;
+    }
+    .navbar-brand {
+        width: 40px!important;
+    }
+    .banner{
+        padding-top: 50px;
+        h2{
+            font-size: 40px;  
+        }
+        h3{
+            font-size: 50px;
+        }
+    }
+    .skills-set{
+        padding-top: 140px;
+    }
+    .tab-content{
+        padding-top: 100px;
+    }
+    .projects{
+        .additional-space{
+            padding-bottom: 30px;
+        }
+        .img-wrapper{
+            &.left, &.right{
+                position: unset;
+                width: 100%;
+            }
+            &.right{
+                padding-top: 70px;
+            }
+        }
+        .wrapper{
+            padding-top: 60px;
+            ul{
+                li{
+                    padding-left: 0;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .banner{
+        h2{
+            font-size: 30px;  
+        }
+    }
+}
