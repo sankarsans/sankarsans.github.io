@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import './scss/variable.scss';
+@import './scss/mixin.scss';
+
+html, body { height: 100%; }
+body { 
+    margin: 0; font-family: 'Montserrat', sans-serif;
+    background-color: $body-bg;
+}
+.fira{
+    font-family: 'Fira Code', monospace;
+}
+.mat-button{
+    @include fira-font;
+}
+.sec-padding{
+    padding: 60px 0;
+}
+.up{
+    top: -80px;
+    @include transistion(0.5s);
+}
+.down{
+    top: 0px;
+    @include transistion(0.5s);
+}

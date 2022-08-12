@@ -1,0 +1,32 @@
+@import '../../scss/variable.scss';
+@import '../../scss/mixin.scss';
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: $body-bg;
+    @include transistion(0.5s);
+    z-index: 9;
+}
+
+ul{
+    li{
+        margin-right: 25px;
+        .nav-link {
+            color: $text-color;
+            @include fira-font;
+            font-size: $font-14;
+            cursor: pointer;
+            @include transistion(0.5s);
+
+            &:hover{
+                @include transistion(0.5s);
+                color: $white;
+            }
+        }
+        &:last-child{
+            border: 1px solid $white;
+            border-radius: 5px;
+        }
+    }
+}

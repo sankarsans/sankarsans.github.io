@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg py-4" id="header">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto" data-aos="fade-down" data-aos-duration="500">
+            <li class="nav-item active">
+                <a class="nav-link" (click)="goAbout()">01. About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="goExperince()">02. Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="goWork()">03. Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="goContact()">04. Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn px-4" mat-button color="primary" (click)="resume()">Resume</a>
+            </li>
+        </ul>
+    </div>
+   </div>
+</nav>

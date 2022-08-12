@@ -1,0 +1,7 @@
+@mixin fira-font {
+    font-family: 'Fira Code', monospace;
+}
+
+@mixin transistion($value) {
+    transition: ($value) all;
+}
