@@ -552,8 +552,11 @@ h2{
 }
 
 .copyrights{
+    img{
+        padding-top: 70px;
+    }
     p{
-        padding: 70px 10px 40px;
+        padding: 30px 10px 40px;
 
         a{
             color: $other-1;
