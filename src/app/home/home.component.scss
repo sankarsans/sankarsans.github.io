@@ -181,6 +181,21 @@
 
 .projects{
     .img-wrapper{
+        a{
+            filter: grayscale(100%) contrast(1) brightness(90%);
+            @include transistion(0.5s);
+            display: inline-block;
+            img{
+                border-radius: 5px;
+                border: 0.5px solid #fff;
+            }
+            &:hover{
+                @include transistion(0.5s);
+                cursor: pointer;
+                filter: none;
+            }
+        }
+        
         &.left{
             position: absolute;
             width: 130%;
@@ -189,13 +204,14 @@
             position: absolute;
             width: 130%;
             left: -30%;
-            z-index: -1;
         }
     }
     .additional-space{
         padding-bottom: 150px;
     }
     .wrapper{
+        position: relative;
+        z-index: 99;
         h4{
             color: $banner-1;
             font-size: $font-14;
@@ -255,6 +271,105 @@
         }
     }
 }
+
+.others{
+    h3 {
+        font-size: 32px;
+        color: rgb(204, 214, 246);
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .other-wrapper{
+        box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        // height: 100%;
+        padding: 2rem 1.75rem;
+        border-radius: 4px;
+        background-color: #112240;
+        // transition: var(--transition);
+        overflow: auto;
+        margin-bottom: 30px;
+        @include transistion(0.5s);
+        &:hover {
+            @include transistion(0.5s);
+            margin-top: -10px;
+        }
+        a{
+            display: inline-block;
+            cursor: pointer;
+            
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            text-align: left;
+            li{
+                color: $banner-3;
+                font-size: $font-13;
+                display: inline-block;
+                padding-right: 20px;
+                text-align: left;
+                font-family: "Fira Code", monospace;
+            }
+        }
+        .project-top{
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            margin-bottom: 35px;
+            width: 100%;
+            a{
+                color: rgb(168, 178, 209);
+                display: inline-block;
+                // margin-left: 20px;
+            }
+        }
+        .bottom{
+            text-align: left;
+            h3{
+                font-size: $font-20;
+                padding-bottom: 0;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: $font-17; 
+                color: $other-1;
+                text-align: left;
+            }
+        }
+        .folder{
+            svg{
+                width: 40px;
+                height: 40px;
+                fill: none;
+            }
+        }
+        .project-links {
+            svg{
+                width: 22px;
+                height: 22px;
+                fill: none;
+            }
+            .extrenal-link{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
 
 .mail-wrapper{
     left: auto;
